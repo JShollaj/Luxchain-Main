@@ -1,0 +1,19 @@
+p, label, input, button {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    margin: 10px 30px;
+}
+
+.box {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+
+#tk-owner, #tk-serial p {
+    border-bottom-style: solid;
+    border-bottom: 5ch;
+    border-color: black;
+}

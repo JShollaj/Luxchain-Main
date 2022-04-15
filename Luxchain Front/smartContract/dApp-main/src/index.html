@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>LuxChain</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">LuxChain</h1>
+          <hr />
+          <br />
+        </div>
+      </div>
+
+      <!-- <div id="loading">The web is loading</div> -->
+      <div id="content">
+        <div class="box">
+          <button id="btn-list">Get Tokens</button>
+          <p id="listToken"></p>
+        </div>
+        <div class="box">
+          <button id="btn-supply">Get Total Supply</button>
+          <p id="supply"></p>
+        </div>
+        </div>
+        <div class="box">
+          <div>
+            <label class="tk-name">Token name</label>
+            <input id="tk-name" placeholder="Token's name" />
+          </div>
+          <div>
+            <label class="tk-to">Token to</label>
+            <input id="tk-to" placeholder="Address the token is minted to"/>
+          </div>
+          <div>
+            <label class="tk-ser">Token serial number</label>
+            <input id="tk-ser" placeholder="Tokens serial number" />
+          </div>
+          <button id="btn-mint">mint the token(Only Admin)</button>
+        </div>
+
+        <div class="box">
+          <input id="invalidate" placeholder="Token id" />
+            <button id="btn-invalid">
+              Invalidate Token(Only Admin)
+            </button>
+        </div>
+
+        <div class="box">
+          <input id="invalidated" placeholder="Token id" />
+            <button id="btn-invalidated">
+              Invalidated Token(Only Admin)
+            </button>
+        </div>
+
+        <div class="box">
+          <input id="restore" placeholder="Token id" />
+            <button id="btn-restore">
+              Restore Token(Only Admin)
+            </button>
+        </div>
+
+        <div class="box">
+          <div id="checkowner" class="row">
+            <input id="ownerof" placeholder="Token id"/>
+            <button id="btn-owner">get the token owner</button>
+            <p id="tk-owner">The owner address is:</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div id="checkser" class="row">
+            <input id="serof" placeholder="Token id"/>
+            <button id="btn-serial">
+              get the token serial number
+            </button>
+            <p id="tk-serial">The token serial is:</p>
+          </div>
+        </div>
+        <div class="box">
+          <div>
+            <label class="tk-to">Token transfer to</label>
+            <input id="tk-tranto" placeholder="Address transfer to"/>
+          </div>
+          <div>
+            <label class="tk">Token ID</label>
+            <input id="tk-id" placeholder="Token id"/>
+          </div>
+          <button id="btn-tran">Transfer token</button>
+        </div>
+
+        <div class="box">
+          <input id="idof" placeholder="Serial Number" />
+            <button id="btn-id">
+              get the token id
+            </button>
+            <p id="tkid">The token id is:</p>
+        </div>
+
+        <div class="box">
+          <input id="report" placeholder="Token id" />
+            <button id="btn-report">
+              Report Lost
+            </button>
+        </div>
+
+        <div class="box">
+          <input id="check" placeholder="Token id" />
+            <button id="btn-check">
+              Check State
+            </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
